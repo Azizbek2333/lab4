@@ -10,6 +10,8 @@ int  main() {
     if (a>80)  {
         cout << " Too fast";
     }
-    else  cout << "right";
+    if (a>=20 && a<=80 ) {
+        cout << "right";
+    }
     return 0;
 }
