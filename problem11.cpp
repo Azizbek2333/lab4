@@ -1,24 +1,21 @@
 #include <iostream>
 using namespace std;
-
 int main() {
-    double weight1, price1, weight2, price2;
+    double x1,y1,x2,y2;
+    cout<<"Enter weight and price for 1 product";
+    cin>>x1>>y1;
+    cout<<"Enter weight and price for 2 product";
+    cin>>x2>>y2;
+    double a1=x1/y1;
+    double a2=x2/y2;
+    if (a1>a2) cout<<"product 1 is better";
+    if (a2>a1) cout<<"product 2 is better";
+    else cout<<"Two products has the same price";
 
-    cout << "Enter price and weight for package 1: ";
-    cin >> price1 >> weight1;
 
-    cout << "Enter price and weight for package 2: ";
-    cin >> price2 >> weight2;
-    double cost1 = price1 / weight1;
-    double cost2 = price2 / weight2;
-
-    if (cost1 > cost2) {
-        cout << "I recommend to buy package 2" << endl;
-    } else if (cost1 < cost2) {
-        cout << "I recommend to buy package 1" << endl;
-    } else {
-        cout << "They have the same price" << endl;
-    }
 
     return 0;
+
+
+}
 }
