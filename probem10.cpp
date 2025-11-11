@@ -1,21 +1,17 @@
 #include <iostream>
-#include <cmath> 
+#include "math.h"
 using namespace std;
-
 int main() {
-    int x, y;
-    cout << "Enter x coordinate: ";
-    cin >> x;
-    cout << "Enter y coordinate: ";
-    cin >> y;
+    double x1,y1;
+    cin>>x1>>y1;
+    double d=(x1*x1 + y1*y1);
+    if (sqrt(d)<=10) cout<<"("<<x1<<","<<y1<<") is in circle"<<endl;
+    else cout<<"("<<x1<<","<<y1<<") is not in circle"<<endl;
 
-    double distance = sqrt(x * x + y * y);
 
-    if (distance <= 10) {
-        cout << "Point ("<<  x << ", " << y << ") in   circle." << endl;
-    } else {
-        cout << "Point (" << x << ", " << y << ") is outside the circle." << endl;
-    }
+
 
     return 0;
+
+
 }
