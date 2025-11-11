@@ -1,18 +1,13 @@
 #include <iostream>
 using namespace std;
-
 int main() {
-    char light;
-    cout << "Enter trafic light signal(g)(y)(r) ";
-    cin >> light;
-    if ( light == 'Y' || light == 'y') {
-        cout << "Get ready";
-    }
-    if (light == 'G' || light == 'g') {
-        cout << "Go";
-    }
-    if ( light == 'R' || light == 'r') {
-        cout << "Stop";
-    }
-    else cout << "input is not right";
-return 0;}
+    char x;
+    cin>>x;
+    if (x=='g') cout<<"go";
+    if(x=='y') cout<<"Get ready";
+    if(x=='r')cout<<"Stop";
+
+    return 0;
+
+
+}
