@@ -1,0 +1,19 @@
+#include <iostream>
+#include "math.h"
+using namespace std;
+int main() {
+    double a,b,c;
+    cin>>a>>b>>c;
+    double d=b*b - (4 * a *c);
+    double x2=-b-sqrt(d);
+    double x1=-b+sqrt(d);
+    if (x1/(2*a)==x2/(2*a)) {
+        cout<<"x1=x2="<<x1/(2*a);
+    }
+    else {
+        cout<<"x1="<<x1/(2*a)<<endl<<"x2="<<x2/(2*a)<<endl;
+    }
+    return 0;
+
+
+}
