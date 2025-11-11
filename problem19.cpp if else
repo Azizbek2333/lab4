@@ -1,0 +1,21 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a;
+    cin>>a;
+    if (a<=1 &&a>0 ) {
+        cout<<"3500";
+    }
+    else if (a<=3) {
+        cout<<"5500";
+    }
+    else if(a<=10) {
+        cout<<"8500";
+    }
+    else if(a<=20) {
+        cout<<"10500";
+    }
+    else cout<<"cannot be shepped";
+    return 0;
+}
