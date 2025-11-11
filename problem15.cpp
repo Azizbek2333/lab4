@@ -1,16 +1,32 @@
 #include <iostream>
 using namespace std;
-
 int main() {
-    int today, daysAfter;
-    cout << "Enter today's day (0=Sunday, 1=Monday, ..., 6=Saturday): ";
-    cin >> today;
-    cout << "Enter the number of days after today: ";
-    cin >> daysAfter;
-    int futureDay = (today + daysAfter) % 7;
-    string days[7] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-    cout << "Today is " << days[today]
-         << " and the future day is " << days[futureDay] << endl;
+    int today;
+    cout<<"Enter todays day:";
+    cin>>today;
+    int daysafter;
+    cout<<"enter future day:";
+    cin>>daysafter;
+    int futureday=(today+daysafter)%7;
+    cout<<"Today is ";
+    switch (today) {
+        case 1:cout<<"dushanba"<<endl;break;
+        case 2:cout<<"sewanba"<<endl;break;
+        case 3:cout<<"chorshanba"<<endl;break;
+        case 4:cout<<"payshanba"<<endl;break;
+        case 5:cout<<"Juma"<<endl;break;
+        case 6:cout<<"SHanba"<<endl;break;
+        case 0:cout<<" Yakshanba"<<endl;break;
+    }
+    cout<<"and the future day is ";
+    switch (futureday){
+        case 1:cout<<"dushanba"<<endl;break;
+        case 2:cout<<"sewanba"<<endl;break;
+        case 3:cout<<"chorshanba"<<endl;break;
+        case 4:cout<<"payshanba"<<endl;break;
+        case 5:cout<<"Juma"<<endl;break;
+        case 6:cout<<"SHanba"<<endl;break;
+        case 0:cout<<" Yakshanba"<<endl;break;
+    }
 
     return 0;
-}
