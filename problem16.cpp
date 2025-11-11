@@ -1,29 +1,22 @@
+
 #include <iostream>
 using namespace std;
-
 int main() {
     int grade;
-    cout << "Enter your grade (0 - 100): ";
-    cin >> grade;
-    if (grade < 0 || grade > 100) {
-        cout << "Invalid grade! Must be between 0 and 100." << endl;
+    cout<<"Enter grade from 100 to 1"<<endl;
+    cin>>grade;
+    if (grade>100||grade<0) {
+        cout<<"invalid value";
     }
-    switch (grade / 10) {
-        case 10:
-        case 9:
-            cout << "Your grade is: A" << endl;
-            break;
-        case 8:
-            cout << "Your grade is: B" << endl;
-            break;
-        case 7:
-            cout << "Your grade is: C" << endl;
-            break;
-        case 6:
-            cout << "Your grade is: D" << endl;
-            break;default:
-            cout << "Your grade is: F" << endl;
-            break;
+    cout<<"The grade is ";
+    switch (grade/10) {
+        case 10:cout<<"A";break;
+        case 9:cout<<"A";break;
+        case 8:cout<<"B";break;
+        case 7:cout<<"C";break;
+        case 6:cout<<"D";break;
+        default:cout<<"F";break;
     }
-    return 0;
+return 0;
+        }
 }
