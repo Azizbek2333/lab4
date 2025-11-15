@@ -1,21 +1,18 @@
+
 #include <iostream>
-#include <string>
 using namespace std;
 int main() {
     srand(time(0));
-    int a = rand();
-    int c = a % 2;
-    string word;
-cout <<a<<endl;
-    cout << "Guess if the number is odd or even: ";
-    cin >> word;
+    int a=rand();
+    cout<<"The number is"<<a<<endl;
+    cout<<"Is it odd or even "<<endl;
+    string odd;
+    cin>>odd;
+    if(a%2==0 && odd=="even" )cout<<"You are right its even";
+    else if(a%2!=0 && odd=="odd")cout<<"You are right its odd";
+    else cout<<"No it is not "<<odd<<endl;
 
-    if (c == 1 && word == "odd")
-        cout << "Number is odd " << endl;
-    else if (c == 0 && word == "even")
-        cout << "Number is even " << endl;
-    else
-        cout << "Wrong guess " << endl;
+
 
     return 0;
 }
